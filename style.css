@@ -1,20 +1,40 @@
+/* style the hole game*/
 *{
   padding: 0%;
   margin: 0%;
+  background-color: antiquewhite;
 }
 #game{
-  margin-top: 100px;
-  text-align: center;
+  padding: 40px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-table{
-  border-collapse: collapse;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+#gameTable{
+  width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
-td{
-  border:2px solid black;
-  height: 200px;
+.inbox{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(95, 54, 0);
+  display: flex;
+}
+#text{
+  color: rgb(95, 54, 0);
+}
+#restartBtn{
+  height: 50px;
   width: 200px;
-  cursor: pointer;
+  border-radius: 50px;
+  color: antiquewhite;
+  background-color:rgb(95, 54, 0) ;
+  
 }
