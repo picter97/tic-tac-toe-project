@@ -9,7 +9,7 @@ const text_x = "X"
 let currentPlayer = text_x
 //change the array to null= empty spaces
 let  spaces = Array(9).fill(null)
-//console.log(spaces)
+console.log(spaces)
 
 //for eahc square adds an event listener on click 
 const startGame = () => {
@@ -21,20 +21,20 @@ const startGame = () => {
 function inboxClicked(e){
 
   const id = e.target.id
-  if(!spaces[id]){
-    
-    e.target.innerText = currentPlayer
-
-    currentPlayer = currentPlayer == text_x ? text_o : text_x
+  if(spaces[id] = null){
+    e.target.innerText = text_x
+  } else{
+    e.target.innerText =  text_o
   }
 }
+
 
 //reset button 
 
 restartBtn.addEventListener('click', restart)
 function restart() {
-  //whitout this can display x-o in same box as we did before restart
-  spaces.fill(null)
+  
+  
 
   inbox.forEach( box => {
     box.innerText= ''
