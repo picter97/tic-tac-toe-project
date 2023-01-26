@@ -21,6 +21,7 @@
 .inbox{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   font-size: 100px;
+  text-shadow: 5px 5px gray;
   color: rgb(255, 140, 0);
   
 }
@@ -43,6 +44,7 @@
   cursor: pointer;
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 5px 5px gray;
   
 }
 #restartBtn{
