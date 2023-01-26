@@ -3,12 +3,12 @@ let text = document.getElementById('text')
 let restartBtn = document.getElementById('restartBtn')
 //turns an arraylike and turns it into an array 
 let inbox = Array.from(document.getElementsByClassName('inbox'))
-// console.log(inbox)
+//  console.log(inbox)
 const text_o = "O"
 const text_x = "X"
 let currentPlayer = text_x
-//change the array to null= empty spaces
-let  spaces = Array(9).fill(null)
+
+let  spaces = Array(9)
 //console.log(spaces)
 
 //for eahc square adds an event listener on click 
@@ -45,5 +45,7 @@ function restart() {
 startGame()
 
 //furture thing to do winner/looser/tie 
+// const wining options 
+
 // display different colors when when game is done 
-//final product version 1.0
+// version 1.0
