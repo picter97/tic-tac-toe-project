@@ -2,7 +2,7 @@
 *{
   padding: 0%;
   margin: 0%;
-  background-color: antiquewhite;
+  background-color: rgb(1, 23, 167);
 }
 #game{
   padding: 40px;
@@ -19,22 +19,30 @@
   margin-top: 40px;
 }
 .inbox{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 100px;
+  color: rgb(255, 140, 0);
+}
+.inbox{
+  
   height: 150px;
   width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(95, 54, 0);
+  border: 2px solid rgb(255, 140, 0);
   display: flex;
 }
 #text{
-  color: rgb(95, 54, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  color: rgb(255, 140, 0);
+  
 }
 #restartBtn{
   height: 50px;
   width: 200px;
   border-radius: 50px;
   color: antiquewhite;
-  background-color:rgb(95, 54, 0) ;
+  background-color:rgb(255, 140, 0) ;
   
 }
