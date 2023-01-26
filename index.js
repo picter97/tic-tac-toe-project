@@ -28,13 +28,6 @@ function inboxClicked(e){
   }
 }
 
-
-
-
-
-
-
-
 //reset button 
 
 restartBtn.addEventListener('click', restart)
@@ -51,11 +44,6 @@ function restart() {
 
 startGame()
 
-// function inboxClicked(e){
-// if(!spaces[id]){
-//   spaces[id] = currentPlayer
-//   e.target.innerText = currentPlayer
-  
-//   currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
-//   }
-// }
+//furture thing to do winner/looser/tie 
+// display different colors when when game is done 
+//final product version 1.0
