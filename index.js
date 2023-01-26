@@ -35,6 +35,7 @@ function inboxClicked(e){
 
 restartBtn.addEventListener('click', restart)
 function restart() {
+  //whitout this can display x-o in same box as we did before restart
   spaces.fill(null)
 
   inbox.forEach( box => {
@@ -43,10 +44,24 @@ function restart() {
   currentPlayer = text_x
 }
 
-startGame()
+
+
+
 //create logic for win / lose 
 
-const wincomb = {
+function playerHasWon() {
+  for (const condition of winningCombos) {
+      let [a, b, c] = condition
+
+      if(spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
+          return [a,b,c]
+      }
+  }
+  return false
+}
+
+
+const wincomb = [
   [0,1,2],
   [3,4,5],
   [6,7,8],
@@ -56,6 +71,7 @@ const wincomb = {
   [0,4,8],
   [2,4,6]
 
-}
+]
 
 
+startGame()
