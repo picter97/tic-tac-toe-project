@@ -7,7 +7,7 @@ let inbox = Array.from(document.getElementsByClassName('inbox'))
 const text_o = "O"
 const text_x = "X"
 let currentPlayer = text_x
-
+//change the array to null = empty spaces
 let  spaces = Array(9)
 //console.log(spaces)
 
@@ -19,8 +19,8 @@ const startGame = () => {
 
 //function when clicked adds X or O
 function inboxClicked(e){
-  e.target.innerText = spaces
-  spaces = currentPlayer
+  //no bug here any more  
+  e.target.innerText = currentPlayer
   if(currentPlayer === text_x){
     currentPlayer = text_o;
   } else{
@@ -33,12 +33,10 @@ function inboxClicked(e){
 restartBtn.addEventListener('click', restart)
 function restart() {
   
-  
-
   inbox.forEach( box => {
     box.innerText= ''
   })
-  currentPlayer = text_x
+  
 }
 
 
@@ -48,4 +46,4 @@ startGame()
 // const wining options 
 
 // display different colors when when game is done 
-// version 1.0
+//final product version 1.0
